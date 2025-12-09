@@ -1,0 +1,14 @@
+C:\Users\lizak\source\repos\cezar\cezar\bin\Debug\net8.0\cezar.exe
+C:\Users\lizak\source\repos\cezar\cezar\bin\Debug\net8.0\cezar.deps.json
+C:\Users\lizak\source\repos\cezar\cezar\bin\Debug\net8.0\cezar.runtimeconfig.json
+C:\Users\lizak\source\repos\cezar\cezar\bin\Debug\net8.0\cezar.dll
+C:\Users\lizak\source\repos\cezar\cezar\bin\Debug\net8.0\cezar.pdb
+C:\Users\lizak\source\repos\cezar\cezar\obj\Debug\net8.0\cezar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lizak\source\repos\cezar\cezar\obj\Debug\net8.0\cezar.AssemblyInfoInputs.cache
+C:\Users\lizak\source\repos\cezar\cezar\obj\Debug\net8.0\cezar.AssemblyInfo.cs
+C:\Users\lizak\source\repos\cezar\cezar\obj\Debug\net8.0\cezar.csproj.CoreCompileInputs.cache
+C:\Users\lizak\source\repos\cezar\cezar\obj\Debug\net8.0\cezar.dll
+C:\Users\lizak\source\repos\cezar\cezar\obj\Debug\net8.0\refint\cezar.dll
+C:\Users\lizak\source\repos\cezar\cezar\obj\Debug\net8.0\cezar.pdb
+C:\Users\lizak\source\repos\cezar\cezar\obj\Debug\net8.0\cezar.genruntimeconfig.cache
+C:\Users\lizak\source\repos\cezar\cezar\obj\Debug\net8.0\ref\cezar.dll

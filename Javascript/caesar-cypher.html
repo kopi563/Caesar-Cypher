@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cézár titkosítás</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+        #all {
+            padding-top:150px;
+            display: flex ;
+            flex-direction: column;
+            align-items: center;
+        }
+        #text {
+            font-weight: bold;
+        }
+        #js-encryption-input {
+            margin-bottom: 15px;
+            padding:10px;
+        }
+        #gomb {
+            border-radius: 25px;
+            margin-top: 10px;
+        }
+        #shiftkey {
+            padding:1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+    <input type="text" id="js-encryption-input" placeholder="A titkos összetevő...">
+    <input min="1" placeholder="Kulcs (szám)" id="shiftkey">
+    <button onclick="encrypt()" id="gomb">Titkosít</button>
+
+    <p id="text">Titkosított string: </p>
+    <p id="js-result"><br></p>
+    </div>
+    <script>
+        const hungarianABC = [" ", "a", "á", "b", "c", "d", "e", "é", "f", "g", "h", "i", "í", "j", "k", "l", 
+                "m", "n", "o", "ó", "ö", "ő", "p", "r", "s", "t", "u", "ú", "ü", "ű", "v", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "-", "!", "?",]
+        
+        function encrypt() {
+            const userstring = document.getElementById("js-encryption-input").value.toLowerCase()
+            let shiftkey = document.getElementById("shiftkey").value
+            shiftkey = parseInt(shiftkey)
+
+            let encodedstring = ""
+            for (let i = 0; i < userstring.length; i++) {
+
+                if (!userstring || isNaN(shiftkey)) {
+                    document.getElementById("js-resuslt").innerHTML = `Érvényes karaktereket adj meg!`;
+                }
+
+                index = hungarianABC.indexOf(userstring[i])
+                encodedstring += hungarianABC[(index+shiftkey) % hungarianABC.length]
+            }
+            document.getElementById("js-result").innerHTML = `${encodedstring}`;
+        }
+    </script>
+</body>
+</html>
