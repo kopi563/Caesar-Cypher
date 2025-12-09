@@ -1,9 +1,3 @@
-#catch mistypes
-#proper bruteforce
-#make interface cleaner simpler
-#do something better with space and uppercase letters
-#on terminal use with arguemnts
-#import all languages
 import os
 
 ascii_art = r"""
