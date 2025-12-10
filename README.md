@@ -5,8 +5,6 @@ A simple caesar cypher encoder and decoder written in python.
 
 To do:
 
--Fix uknown shift key instance
-
 -Catch mistypes
 
 -Improve interface
