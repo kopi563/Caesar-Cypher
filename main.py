@@ -39,7 +39,6 @@ global hungarianABC
 hungarianABC = [" ", "a", "á", "b", "c", "d", "e", "é", "f", "g", "h", "i", "í", "j", "k", "l", 
                 "m", "n", "o", "ó", "ö", "ő", "p", "r", "s", "t", "u", "ú", "ü", "ű", "v", "z",]
 
-
 while True:
     terminalClear()
 
@@ -72,14 +71,15 @@ while True:
         def decoding(string, isKeyKnown=None):
             decodeResult = ""
             if isKeyKnown == None:
-                print("\nShift Key | Decoded string")
-                print("-" * 40)
-                for i in range(len(chosenABC)):
+                print(f"\n{'Shift Key':<10} | {'Decoded string'}")
+                print("-" * 30)
+                for i in range(1, len(chosenABC)):
                     for j in string:
                         j = j.lower()
                         index = chosenABC.index(j)
                         decodeResult += chosenABC[(index - i) % len(chosenABC)]
-                        print(f"{i:9} | {decodeResult}")
+                    print(f"{i:^10} | {decodeResult}\n")
+                    decodeResult = ""
                 input("\nPress enter to contiue")
             else:
                 decodeResult = ""
@@ -87,8 +87,8 @@ while True:
                     i = i.lower()
                     index = chosenABC.index(i)
                     decodeResult += chosenABC[index-isKeyKnown]
-            print(f"\nDecoded string: {decodeResult}")
-            input("\nPress enter to continue")
+                print(f"\nDecoded string: {decodeResult}")
+                input("\nPress enter to continue")
         def prompting(previous=None):
             if previous == None:
                 decodingString = str(input("\nDecode: "))
