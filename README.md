@@ -5,8 +5,4 @@ A simple caesar cypher encoder and decoder written in python.
 
 To do:
 
--Catch mistypes
-
--Improve interface
-
--Make CLI usage
+-Automatically recognize words
